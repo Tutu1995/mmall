@@ -18,6 +18,7 @@ public enum ResponseCode {
         this.code = code;
         this.desc = desc;
     }
+
     // return code
     public int getCode(){
         return code;

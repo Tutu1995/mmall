@@ -83,6 +83,7 @@ public class Const {
             throw new RuntimeException("Cannot find enum object");
         }
     }
+
     public interface  AlipayCallback{
         String TRADE_STATUS_WAIT_BUYER_PAY = "WAIT_BUYER_PAY";
         String TRADE_STATUS_TRADE_SUCCESS = "TRADE_SUCCESS";
@@ -90,8 +91,6 @@ public class Const {
         String RESPONSE_SUCCESS = "success";
         String RESPONSE_FAILED = "failed";
     }
-
-
 
     public enum PayPlatformEnum{
         ALIPAY(1,"ALIPAY");
@@ -119,6 +118,7 @@ public class Const {
             this.code = code;
             this.value = value;
         }
+
         private String value;
         private int code;
 
@@ -130,7 +130,6 @@ public class Const {
             return code;
         }
 
-
         public static PaymentTypeEnum codeOf(int code){
             for(PaymentTypeEnum paymentTypeEnum : values()){
                 if(paymentTypeEnum.getCode() == code){
@@ -141,8 +140,4 @@ public class Const {
         }
 
     }
-
-
-
-
 }

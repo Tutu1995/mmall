@@ -109,7 +109,6 @@ public class CartServiceImpl implements ICartService {
                 cartProductVo.setId(cartItem.getId());
                 cartProductVo.setUserId(cartItem.getUserId());
                 cartProductVo.setProductId(cartItem.getProductId());
-
                 Product product = productMapper.selectByPrimaryKey(cartItem.getProductId());
                 if(product != null) {
                     cartProductVo.setProductMainImage(product.getMainImage());
@@ -135,7 +134,6 @@ public class CartServiceImpl implements ICartService {
                     cartProductVo.setProductTotalPrice(BigDecimalUtil.mul(product.getPrice().doubleValue(), cartItem.getQuantity()));
                     cartProductVo.setProductChecked(cartItem.getChecked());
                 }
-
                 if(cartItem.getChecked() == Const.Cart.CHECKED) {
                     cartTotalPrice = BigDecimalUtil.add(cartTotalPrice.doubleValue(), cartProductVo.getProductTotalPrice().doubleValue());
                 }

@@ -22,7 +22,7 @@
     receiver_district, receiver_address, receiver_zip, create_time, update_time
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from mmall_shipping
     where id = #{id,jdbcType=INTEGER}

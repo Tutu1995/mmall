@@ -24,13 +24,13 @@ public class ShippingServiceImpl implements IShippingService {
     private ShippingMapper shippingMapper;
 
     @Override
-    public ServerResponse add(Integer userId, Shipping shipping) {
-        shipping.setId(userId);
-        int rowCount = shippingMapper.insert(shipping); // id will add to shipping automatically, check xml file
-        if(rowCount > 0) {
+    public ServerResponse add(Integer userId, Shipping shipping){
+        shipping.setUserId(userId);
+        int rowCount = shippingMapper.insert(shipping);
+        if(rowCount > 0){
             Map result = Maps.newHashMap();
-            result.put("shippingId", shipping.getId());
-            return ServerResponse.createBySuccess("Create address successfully", result);
+            result.put("shippingId",shipping.getId());
+            return ServerResponse.createBySuccess("Create address successfully",result);
         }
         return ServerResponse.createByErrorMessage("Cannot create address");
     }
