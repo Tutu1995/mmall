@@ -26,7 +26,7 @@ public class ShippingServiceImpl implements IShippingService {
     @Override
     public ServerResponse add(Integer userId, Shipping shipping){
         shipping.setUserId(userId);
-        int rowCount = shippingMapper.insertSelective(shipping);
+        int rowCount = shippingMapper.insert(shipping);
         if(rowCount > 0){
             Map result = Maps.newHashMap();
             result.put("shippingId",shipping.getId());
