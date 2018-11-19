@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a90cea43-dd8b-4901-bf83-dbc39fe7473e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
     </list>
     <ignored path="mmall.iws" />
@@ -26,66 +27,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShippingServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShippingServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.259259">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.21">
+              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1492533248000" expanded="true" signature="1323:1429" placeholder="select from mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="1516:1576" placeholder="delete from " />
-                <marker date="1492533248000" expanded="true" signature="1653:2053" placeholder="insert into mmall_user... " />
-                <marker date="1492533248000" expanded="true" signature="3814:4719" placeholder="update mmall... " />
-                <marker date="1492533248000" expanded="true" signature="4808:5250" placeholder="update mmall... " />
-                <marker date="1492533248000" expanded="true" signature="5344:5408" placeholder="select count... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="5494:5552" placeholder="select count... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="5645:5807" placeholder="SELECT -- *?... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="5910:5982" placeholder="select quest... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="6065:6193" placeholder="SELECT count... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="6272:6376" placeholder="update mmall... " />
-                <marker date="1492533248000" expanded="true" signature="6461:6556" placeholder="SELECT count... mmall_user" />
-                <marker date="1492533248000" expanded="true" signature="6647:6729" placeholder="select count... mmall_user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShippingMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShippingMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5063291">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state vertical-scroll-proportion="-14.833333">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="29" />
               <folding>
-                <marker date="1542583117587" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
-                <marker date="1542583117587" expanded="true" signature="1838:1902" placeholder="delete from " />
-                <marker date="1542583117587" expanded="true" signature="2023:2647" placeholder="insert into mmall_shipping... " />
-                <marker date="1542583117587" expanded="true" signature="4953:6230" placeholder="update mmall... " />
-                <marker date="1542583117587" expanded="true" signature="6323:6982" placeholder="update mmall... " />
-                <marker date="1542583117587" expanded="true" signature="7061:7146" placeholder="DELETE FROM " />
-                <marker date="1542583117587" expanded="true" signature="7237:7903" placeholder="update mmall... " />
-                <marker date="1542583117587" expanded="true" signature="8009:8136" placeholder="SELECT from mmall_shipping" />
-                <marker date="1542583117587" expanded="true" signature="8232:8332" placeholder="SELECT from mmall_shipping" />
+                <marker date="1542585590791" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
+                <marker date="1542585590791" expanded="true" signature="1838:1902" placeholder="delete from " />
+                <marker date="1542585590791" expanded="true" signature="2023:2640" placeholder="insert into mmall_shipping... " />
+                <marker date="1542585590791" expanded="true" signature="4946:6223" placeholder="update mmall... " />
+                <marker date="1542585590791" expanded="true" signature="6316:6975" placeholder="update mmall... " />
+                <marker date="1542585590791" expanded="true" signature="7054:7139" placeholder="DELETE FROM " />
+                <marker date="1542585590791" expanded="true" signature="7230:7896" placeholder="update mmall... " />
+                <marker date="1542585590791" expanded="true" signature="8002:8129" placeholder="SELECT from mmall_shipping" />
+                <marker date="1542585590791" expanded="true" signature="8225:8325" placeholder="SELECT from mmall_shipping" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +90,7 @@
       <file leaf-file-name="CartMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="27" column="20" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <marker date="1492533248000" expanded="true" signature="1083:1189" placeholder="select from mmall_cart" />
@@ -160,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/common/ResponseCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1057,15 +1024,17 @@
       <workItem from="1542352957408" duration="240000" />
       <workItem from="1542576994399" duration="1526000" />
       <workItem from="1542579388097" duration="1531000" />
-      <workItem from="1542581516983" duration="1518000" />
+      <workItem from="1542581516983" duration="1576000" />
+      <workItem from="1542583609635" duration="708000" />
+      <workItem from="1542585568470" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7664000" />
+    <option name="totallyTimeSpent" value="8472000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1077,7 +1046,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24105866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1173,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,7 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18072289">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,14 +1387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1444,7 +1399,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36144578">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,18 +1418,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.259259">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="35" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <marker date="1492533248000" expanded="true" signature="1083:1189" placeholder="select from mmall_cart" />
+            <marker date="1492533248000" expanded="true" signature="1276:1336" placeholder="delete from " />
+            <marker date="1492533248000" expanded="true" signature="1413:1701" placeholder="insert into mmall_cart... " />
+            <marker date="1492533248000" expanded="true" signature="3048:3694" placeholder="update mmall... " />
+            <marker date="1492533248000" expanded="true" signature="3783:4106" placeholder="update mmall... " />
+            <marker date="1492533248000" expanded="true" signature="4215:4345" placeholder="SELECT from mmall_cart" />
+            <marker date="1492533248000" expanded="true" signature="4446:4542" placeholder="SELECT from mmall_cart" />
+            <marker date="1492533248000" expanded="true" signature="4652:4726" placeholder="SELECT count... mmall_cart" />
+            <marker date="1492533248000" expanded="true" signature="5428:5509" placeholder="select IFNUL... " />
+            <marker date="1492533248000" expanded="true" signature="5617:5733" placeholder="SELECT from mmall_cart" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.56962025">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
           <folding>
             <marker date="1492533248000" expanded="true" signature="1323:1429" placeholder="select from mmall_user" />
             <marker date="1492533248000" expanded="true" signature="1516:1576" placeholder="delete from " />
@@ -1494,40 +1459,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.625">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <marker date="1492533248000" expanded="true" signature="1083:1189" placeholder="select from mmall_cart" />
-            <marker date="1492533248000" expanded="true" signature="1276:1336" placeholder="delete from " />
-            <marker date="1492533248000" expanded="true" signature="1413:1701" placeholder="insert into mmall_cart... " />
-            <marker date="1492533248000" expanded="true" signature="3048:3694" placeholder="update mmall... " />
-            <marker date="1492533248000" expanded="true" signature="3783:4106" placeholder="update mmall... " />
-            <marker date="1492533248000" expanded="true" signature="4215:4345" placeholder="SELECT from mmall_cart" />
-            <marker date="1492533248000" expanded="true" signature="4446:4542" placeholder="SELECT from mmall_cart" />
-            <marker date="1492533248000" expanded="true" signature="4652:4726" placeholder="SELECT count... mmall_cart" />
-            <marker date="1492533248000" expanded="true" signature="5428:5509" placeholder="select IFNUL... " />
-            <marker date="1492533248000" expanded="true" signature="5617:5733" placeholder="SELECT from mmall_cart" />
-          </folding>
+        <state vertical-scroll-proportion="0.24096386">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5063291">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state vertical-scroll-proportion="-14.833333">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="29" />
           <folding>
-            <marker date="1542583117587" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
-            <marker date="1542583117587" expanded="true" signature="1838:1902" placeholder="delete from " />
-            <marker date="1542583117587" expanded="true" signature="2023:2647" placeholder="insert into mmall_shipping... " />
-            <marker date="1542583117587" expanded="true" signature="4953:6230" placeholder="update mmall... " />
-            <marker date="1542583117587" expanded="true" signature="6323:6982" placeholder="update mmall... " />
-            <marker date="1542583117587" expanded="true" signature="7061:7146" placeholder="DELETE FROM " />
-            <marker date="1542583117587" expanded="true" signature="7237:7903" placeholder="update mmall... " />
-            <marker date="1542583117587" expanded="true" signature="8009:8136" placeholder="SELECT from mmall_shipping" />
-            <marker date="1542583117587" expanded="true" signature="8232:8332" placeholder="SELECT from mmall_shipping" />
+            <marker date="1542585590791" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
+            <marker date="1542585590791" expanded="true" signature="1838:1902" placeholder="delete from " />
+            <marker date="1542585590791" expanded="true" signature="2023:2640" placeholder="insert into mmall_shipping... " />
+            <marker date="1542585590791" expanded="true" signature="4946:6223" placeholder="update mmall... " />
+            <marker date="1542585590791" expanded="true" signature="6316:6975" placeholder="update mmall... " />
+            <marker date="1542585590791" expanded="true" signature="7054:7139" placeholder="DELETE FROM " />
+            <marker date="1542585590791" expanded="true" signature="7230:7896" placeholder="update mmall... " />
+            <marker date="1542585590791" expanded="true" signature="8002:8129" placeholder="SELECT from mmall_shipping" />
+            <marker date="1542585590791" expanded="true" signature="8225:8325" placeholder="SELECT from mmall_shipping" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

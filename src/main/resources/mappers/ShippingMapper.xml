@@ -32,7 +32,7 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.mmall.pojo.Shipping" useGeneratedKeys="true" keyProperty="id">
-    insert ignore into mmall_shipping (id, user_id, receiver_name,
+    insert into mmall_shipping (id, user_id, receiver_name,
       receiver_phone, receiver_mobile, receiver_province, 
       receiver_city, receiver_district, receiver_address, 
       receiver_zip, create_time, update_time
@@ -216,24 +216,5 @@
     from mmall_shipping
     where user_id = #{userId}
   </select>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </mapper>
