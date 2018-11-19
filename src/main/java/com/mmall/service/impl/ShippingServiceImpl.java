@@ -14,60 +14,64 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by tino on 10/17/18.
+ * Created by geely
  */
-
 @Service("iShippingService")
 public class ShippingServiceImpl implements IShippingService {
+
 
     @Autowired
     private ShippingMapper shippingMapper;
 
-    @Override
     public ServerResponse add(Integer userId, Shipping shipping){
         shipping.setUserId(userId);
         int rowCount = shippingMapper.insert(shipping);
         if(rowCount > 0){
             Map result = Maps.newHashMap();
             result.put("shippingId",shipping.getId());
-            return ServerResponse.createBySuccess("Create address successfully",result);
+            return ServerResponse.createBySuccess("新建地址成功",result);
         }
-        return ServerResponse.createByErrorMessage("Cannot create address");
+        return ServerResponse.createByErrorMessage("新建地址失败");
     }
 
-    @Override
-    public ServerResponse<String> del(Integer userId, Integer shippingId) {
-        int resultCount = shippingMapper.deleteByShippingIdUserId(userId, shippingId);
-        if(resultCount > 0) {
-            return ServerResponse.createBySuccess("Delete address successfully");
+    public ServerResponse<String> del(Integer userId,Integer shippingId){
+        int resultCount = shippingMapper.deleteByShippingIdUserId(userId,shippingId);
+        if(resultCount > 0){
+            return ServerResponse.createBySuccess("删除地址成功");
         }
-        return ServerResponse.createBySuccess("Cannot delete address");
+        return ServerResponse.createByErrorMessage("删除地址失败");
     }
 
-    @Override
-    public ServerResponse<String> update(Integer userId, Shipping shipping) {
-        shipping.setUserId(userId); // must set current userId to shipping to avoid other people use shipping from other users
-        int resultCount = shippingMapper.updateByShipping(shipping);
-        if(resultCount > 0) {
-            return ServerResponse.createBySuccess("Update address successfully");
+
+    public ServerResponse update(Integer userId, Shipping shipping){
+        shipping.setUserId(userId);
+        int rowCount = shippingMapper.updateByShipping(shipping);
+        if(rowCount > 0){
+            return ServerResponse.createBySuccess("更新地址成功");
         }
-        return ServerResponse.createBySuccess("Cannot update address");
+        return ServerResponse.createByErrorMessage("更新地址失败");
     }
 
-    @Override
-    public ServerResponse select(Integer userId, Integer shippingId) {
-        Shipping shipping = shippingMapper.selectByShippingIdUserId(userId, shippingId);
-        if(shipping == null) {
-            return ServerResponse.createByErrorMessage("Cannot find the address");
+    public ServerResponse<Shipping> select(Integer userId, Integer shippingId){
+        Shipping shipping = shippingMapper.selectByShippingIdUserId(userId,shippingId);
+        if(shipping == null){
+            return ServerResponse.createByErrorMessage("无法查询到该地址");
         }
-        return ServerResponse.createBySuccess("Find the address successfully", shipping);
+        return ServerResponse.createBySuccess("更新地址成功",shipping);
     }
 
-    @Override
-    public ServerResponse<PageInfo> list(Integer userId, int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
-        List<Shipping> result = shippingMapper.selectByUserId(userId);
-        PageInfo pageInfo = new PageInfo(result);
+
+    public ServerResponse<PageInfo> list(Integer userId,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<Shipping> shippingList = shippingMapper.selectByUserId(userId);
+        PageInfo pageInfo = new PageInfo(shippingList);
         return ServerResponse.createBySuccess(pageInfo);
     }
+
+
+
+
+
+
+
 }

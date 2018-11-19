@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a90cea43-dd8b-4901-bf83-dbc39fe7473e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/IShippingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/IShippingService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
     </list>
@@ -27,31 +31,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShippingServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShippingServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state vertical-scroll-proportion="1.98">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShippingMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IShippingService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/IShippingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShippingMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75630254">
-              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            <state vertical-scroll-proportion="-12.958333">
+              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
               <folding>
-                <marker date="1542586264961" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
-                <marker date="1542586264961" expanded="true" signature="1838:1902" placeholder="delete from " />
-                <marker date="1542586264961" expanded="true" signature="2023:2647" placeholder="insert into mmall_shipping... " />
-                <marker date="1542586264961" expanded="true" signature="4953:6230" placeholder="update mmall... " />
-                <marker date="1542586264961" expanded="true" signature="6323:6982" placeholder="update mmall... " />
-                <marker date="1542586264961" expanded="true" signature="7061:7146" placeholder="DELETE FROM " />
-                <marker date="1542586264961" expanded="true" signature="7237:7903" placeholder="update mmall... " />
-                <marker date="1542586264961" expanded="true" signature="8009:8136" placeholder="SELECT from mmall_shipping" />
-                <marker date="1542586264961" expanded="true" signature="8232:8332" placeholder="SELECT from mmall_shipping" />
+                <marker date="1542587479222" expanded="true" signature="1642:1648" placeholder="select from mmall_shipping" />
+                <marker date="1542587479222" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
+                <marker date="1542587479222" expanded="true" signature="1838:1902" placeholder="delete from " />
+                <marker date="1542587479222" expanded="true" signature="2023:2619" placeholder="insert into mmall_shipping... " />
+                <marker date="1542587479222" expanded="true" signature="4925:6202" placeholder="update mmall... " />
+                <marker date="1542587479222" expanded="true" signature="6295:6934" placeholder="update mmall... " />
+                <marker date="1542587479222" expanded="true" signature="7013:7098" placeholder="DELETE FROM " />
+                <marker date="1542587479222" expanded="true" signature="7189:7835" placeholder="update mmall... " />
+                <marker date="1542587479222" expanded="true" signature="7941:8068" placeholder="SELECT from mmall_shipping" />
+                <marker date="1542587479222" expanded="true" signature="8164:8264" placeholder="SELECT from mmall_shipping" />
               </folding>
             </state>
           </provider>
@@ -72,6 +87,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShippingMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShippingController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,9 +162,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/common/ResponseCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/IShippingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -402,40 +440,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pojo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1026,16 +1030,17 @@
       <workItem from="1542579388097" duration="1531000" />
       <workItem from="1542581516983" duration="1576000" />
       <workItem from="1542583609635" duration="708000" />
-      <workItem from="1542585568470" duration="619000" />
+      <workItem from="1542585568470" duration="914000" />
+      <workItem from="1542587446857" duration="184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9049000" />
+    <option name="totallyTimeSpent" value="9528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1046,7 +1051,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24105866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1086,20 +1091,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="198" column="56" selection-start-line="198" selection-start-column="56" selection-end-line="198" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1395,21 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36144578">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1466,29 +1442,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.958333">
+          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding>
+            <marker date="1542587479222" expanded="true" signature="1642:1648" placeholder="select from mmall_shipping" />
+            <marker date="1542587479222" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
+            <marker date="1542587479222" expanded="true" signature="1838:1902" placeholder="delete from " />
+            <marker date="1542587479222" expanded="true" signature="2023:2619" placeholder="insert into mmall_shipping... " />
+            <marker date="1542587479222" expanded="true" signature="4925:6202" placeholder="update mmall... " />
+            <marker date="1542587479222" expanded="true" signature="6295:6934" placeholder="update mmall... " />
+            <marker date="1542587479222" expanded="true" signature="7013:7098" placeholder="DELETE FROM " />
+            <marker date="1542587479222" expanded="true" signature="7189:7835" placeholder="update mmall... " />
+            <marker date="1542587479222" expanded="true" signature="7941:8068" placeholder="SELECT from mmall_shipping" />
+            <marker date="1542587479222" expanded="true" signature="8164:8264" placeholder="SELECT from mmall_shipping" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <caret line="143" column="1" selection-start-line="143" selection-start-column="1" selection-end-line="143" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75630254">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <marker date="1542586264961" expanded="true" signature="1642:1751" placeholder="select from mmall_shipping" />
-            <marker date="1542586264961" expanded="true" signature="1838:1902" placeholder="delete from " />
-            <marker date="1542586264961" expanded="true" signature="2023:2647" placeholder="insert into mmall_shipping... " />
-            <marker date="1542586264961" expanded="true" signature="4953:6230" placeholder="update mmall... " />
-            <marker date="1542586264961" expanded="true" signature="6323:6982" placeholder="update mmall... " />
-            <marker date="1542586264961" expanded="true" signature="7061:7146" placeholder="DELETE FROM " />
-            <marker date="1542586264961" expanded="true" signature="7237:7903" placeholder="update mmall... " />
-            <marker date="1542586264961" expanded="true" signature="8009:8136" placeholder="SELECT from mmall_shipping" />
-            <marker date="1542586264961" expanded="true" signature="8232:8332" placeholder="SELECT from mmall_shipping" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/ShippingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/IShippingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/ShippingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.98">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
