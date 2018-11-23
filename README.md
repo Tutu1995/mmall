@@ -10,7 +10,7 @@ System: CentOS 6.8 64
 > cd developer
 ```
 * download:
-JDK url will be invalid after a period time. Please donwload on www.oracle.com
+JDK url will be invalid after a period of time. Please donwload on www.oracle.com
 ```
 > wget http://xxx/jdk-8u144-linux-x64xxxxx.rpm
 ```
@@ -18,7 +18,7 @@ JDK url will be invalid after a period time. Please donwload on www.oracle.com
 ```
 > mv jdk-8u144-linux-x64.rpm jdk-8u144-linux-x64.rpmxxxxxxxxx
 ```
-* grant privelege
+* grant privileges
 ```
 > chmod 777 jdk-8u144-linux-x64.rpm
 ```
@@ -45,11 +45,6 @@ JDK url will be invalid after a period time. Please donwload on www.oracle.com
 
 modify: SELINUX=disabled  
 ```
-* installation
-```
-> rpm -ivh jdk-8u144-linux-x64.rpm
-```
-
 3. Tomcat: 
 * move to directory
 ```
@@ -123,7 +118,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 add:
 character-set-server=utf8
 
-default-character-set = utf8
+default-character-set=utf8
 ```
 * start mysql
 ```
@@ -131,7 +126,7 @@ default-character-set = utf8
 ```
 * log in root
 ```
-> mysql -uroot
+> mysql -u root
 ```
 * change password
 ```
@@ -142,6 +137,9 @@ default-character-set = utf8
 > insert into mysql.user(host,user,password) values("localhost","YOUR_USERNAME",password("YOUR_PASSWORD"));
 ```
 * log in your new account
+```
+> mysql -u root -p
+```
 * create database
 ```
 > mysql> create database `YOUR_DATABASE_NAME` default character set utf8 COLLATE utf8_general_ci;
@@ -150,7 +148,7 @@ default-character-set = utf8
 ```
 >  grant all privileges on YOURDATABASENAME.* to YOURUSERNAME@localhost identified by 'YOUR_PASSWORD';
 ```
-* remote control
+* enable remote control
 ```
 >  update mysql.user set Host='%' where user='YOUR_USERNAME';
 ```
