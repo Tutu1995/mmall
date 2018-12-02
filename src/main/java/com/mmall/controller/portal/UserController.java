@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by geely
+ * Created by tino
  */
 
 @Controller
@@ -27,22 +27,16 @@ public class UserController {
     private IUserService iUserService;
 
 
-    /**
-     * 用户登录
-     * @param username
-     * @param password
-     * @param session
-     * @return
-     */
     @RequestMapping(value = "login.do",method = RequestMethod.POST)
     @ResponseBody
     public ServerResponse<User> login(String username, String password, HttpSession session){
         ServerResponse<User> response = iUserService.login(username,password);
-        if(response.isSuccess()){
-            session.setAttribute(Const.CURRENT_USER,response.getData());
+        if(response.isSuccess()) {
+            session.setAttribute(Const.CURRENT_USER, response.getData());
         }
         return response;
     }
+
 
     @RequestMapping(value = "logout.do",method = RequestMethod.POST)
     @ResponseBody
@@ -72,7 +66,7 @@ public class UserController {
         if(user != null){
             return ServerResponse.createBySuccess(user);
         }
-        return ServerResponse.createByErrorMessage("用户未登录,无法获取当前用户的信息");
+        return ServerResponse.createByErrorMessage("Need to login");
     }
 
 
@@ -103,7 +97,7 @@ public class UserController {
     public ServerResponse<String> resetPassword(HttpSession session,String passwordOld,String passwordNew){
         User user = (User)session.getAttribute(Const.CURRENT_USER);
         if(user == null){
-            return ServerResponse.createByErrorMessage("用户未登录");
+            return ServerResponse.createByErrorMessage("Need to login");
         }
         return iUserService.resetPassword(passwordOld,passwordNew,user);
     }
@@ -114,7 +108,7 @@ public class UserController {
     public ServerResponse<User> update_information(HttpSession session,User user){
         User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
         if(currentUser == null){
-            return ServerResponse.createByErrorMessage("用户未登录");
+            return ServerResponse.createByErrorMessage("Need to login");
         }
         user.setId(currentUser.getId());
         user.setUsername(currentUser.getUsername());
@@ -131,7 +125,7 @@ public class UserController {
     public ServerResponse<User> get_information(HttpSession session){
         User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
         if(currentUser == null){
-            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"未登录,需要强制登录status=10");
+            return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),"Need to login");
         }
         return iUserService.getInformation(currentUser.getId());
     }

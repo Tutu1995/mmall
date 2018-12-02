@@ -39,7 +39,7 @@ public class FileServiceImpl implements IFileService {
             fileDir.mkdirs();// can create multiple file directories
         }
 
-        // create target file in the directory uder this path
+        // create target file in the directory under this path
         File targetFile = new File(path, uploadFileName);
 
         try {

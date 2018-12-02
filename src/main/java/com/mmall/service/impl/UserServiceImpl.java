@@ -208,6 +208,9 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.createByError();
     }
 
-
-
+    @Override
+    public ServerResponse getUserNumber() {
+        int updateCount = userMapper.checkUserNumber();
+        return ServerResponse.createBySuccess(updateCount);
+    }
 }

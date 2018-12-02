@@ -237,16 +237,8 @@
   </select>
 
 
-
-
-
-
-
-
-
-
-
-
-
+  <select id="checkOrderNumber" resultType="int">
+    select count(*) from  mmall_order
+  </select>
 
 </mapper>

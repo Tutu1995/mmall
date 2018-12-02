@@ -131,7 +131,7 @@ public class ProductManageController {
 
             return ServerResponse.createBySuccess(fileMap);
         } else {
-            return ServerResponse.createByErrorMessage("Need administrator  permission");
+            return ServerResponse.createByErrorMessage("Need administrator permission");
         }
     }
 
@@ -160,19 +160,15 @@ public class ProductManageController {
                 return resultMap;
             }
             String url = PropertiesUtil.getProperty("ftp.server.http.prefix") + targetFileName;
-
             resultMap.put("Success", true);
             resultMap.put("msg", "Upload complete");
             resultMap.put("file_path", url);
             response.addHeader("Access-Control-Allow-Headers", "X-File-Name");
             return resultMap;
-
-
         } else {
             resultMap.put("Success", false);
-            resultMap.put("msg", "User does not log in, please log in admin");
+            resultMap.put("msg", "Need administrator permission");
             return resultMap;
         }
-
     }
 }

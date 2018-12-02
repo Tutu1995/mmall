@@ -216,4 +216,8 @@
     </if>
   </select>
 
+  <select id="checkProductNumber" resultType="int">
+    select count(*) from  mmall_product
+  </select>
+
 </mapper>

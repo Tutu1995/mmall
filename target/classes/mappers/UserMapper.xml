@@ -211,8 +211,7 @@
     and id != #{userId}
   </select>
 
-
-
-
-
+  <select id="checkUserNumber" resultType="int">
+    select count(*) from  mmall_user
+  </select>
 </mapper>
