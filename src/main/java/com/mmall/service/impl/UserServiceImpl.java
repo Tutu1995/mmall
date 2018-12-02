@@ -10,6 +10,7 @@ import com.mmall.dao.UserMapper;
 import com.mmall.pojo.Product;
 import com.mmall.pojo.User;
 import com.mmall.service.IUserService;
+import com.mmall.util.DateTimeUtil;
 import com.mmall.util.MD5Util;
 import com.mmall.util.PropertiesUtil;
 import com.mmall.vo.ProductListVo;
@@ -241,9 +242,11 @@ public class UserServiceImpl implements IUserService {
 
     private UserListVo assembleUserListVo(User user) {
         UserListVo userListVo = new UserListVo();
+        userListVo.setId(user.getId());
         userListVo.setUsername(user.getUsername());
         userListVo.setEmail(user.getEmail());
         userListVo.setPhone(user.getPhone());
+        userListVo.setCreateTime(DateTimeUtil.dateToStr(user.getCreateTime()));
         return userListVo;
     }
 }
