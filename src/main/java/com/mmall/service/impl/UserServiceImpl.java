@@ -1,16 +1,24 @@
 package com.mmall.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.google.common.collect.Lists;
 import com.mmall.common.Const;
 import com.mmall.common.ServerResponse;
 import com.mmall.common.TokenCache;
 import com.mmall.dao.UserMapper;
+import com.mmall.pojo.Product;
 import com.mmall.pojo.User;
 import com.mmall.service.IUserService;
 import com.mmall.util.MD5Util;
+import com.mmall.util.PropertiesUtil;
+import com.mmall.vo.ProductListVo;
+import com.mmall.vo.UserListVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -212,5 +220,30 @@ public class UserServiceImpl implements IUserService {
     public ServerResponse getUserNumber() {
         int updateCount = userMapper.checkUserNumber();
         return ServerResponse.createBySuccess(updateCount);
+    }
+
+    @Override
+    // use mybatis page helper plugin
+    public ServerResponse<PageInfo> getUserList(int pageNum, int pageSize) {
+        // startPage--start
+        PageHelper.startPage(pageNum, pageSize);
+        List<User> list = userMapper.selectList();
+        // how to request sql
+        List<UserListVo> userListVosList = Lists.newArrayList();
+        for (User userItem : list) {
+            userListVosList.add(assembleUserListVo(userItem));
+        }
+        // pageHelper ending
+        PageInfo pageResult = new PageInfo(list);
+        pageResult.setList(userListVosList);
+        return ServerResponse.createBySuccess(pageResult);
+    }
+
+    private UserListVo assembleUserListVo(User user) {
+        UserListVo userListVo = new UserListVo();
+        userListVo.setUsername(user.getUsername());
+        userListVo.setEmail(user.getEmail());
+        userListVo.setPhone(user.getPhone());
+        return userListVo;
     }
 }

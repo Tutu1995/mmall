@@ -214,4 +214,9 @@
   <select id="checkUserNumber" resultType="int">
     select count(*) from  mmall_user
   </select>
+  <select id="selectList" resultMap="BaseResultMap" >
+    SELECT
+    <include refid="Base_Column_List"/>
+    from mmall_user
+  </select>
 </mapper>
