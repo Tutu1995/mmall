@@ -6,6 +6,7 @@ import com.mmall.common.ServerResponse;
 import com.mmall.dao.CategoryMapper;
 import com.mmall.pojo.Category;
 import com.mmall.service.ICategoryService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,9 +22,8 @@ import java.util.Set;
  */
 
 @Service("iCategoryService")
+@Slf4j
 public class CategoryServiceImpl implements ICategoryService {
-
-    private Logger logger = LoggerFactory.getLogger(CategoryServiceImpl.class);
 
     @Autowired
     private CategoryMapper categoryMapper;
@@ -73,7 +73,7 @@ public class CategoryServiceImpl implements ICategoryService {
         List<Category> categoryList = categoryMapper.selectCategoryChildrenByParentId(categoryId);
         // tell if the collection is null or the collection has no element
         if(CollectionUtils.isEmpty(categoryList)) {
-            logger.info("Cannot find children of this category");
+            log.info("Cannot find children of this category");
         }
         return ServerResponse.createBySuccess(categoryList);
     }

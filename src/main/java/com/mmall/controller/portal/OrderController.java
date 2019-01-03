@@ -9,8 +9,7 @@ import com.mmall.common.ResponseCode;
 import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
 import com.mmall.service.IOrderService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,9 +27,8 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/order/")
+@Slf4j
 public class OrderController {
-
-    private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
     @Autowired
     private IOrderService iOrderService;
@@ -112,7 +109,7 @@ public class OrderController {
             }
             params.put(name, valueStr);
         }
-        logger.info("Alipay callback, sign: {}, trade_status: {}, index: {}", params.get("sign"), params.get("trade_status"), params.toString());
+        log.info("Alipay callback, sign: {}, trade_status: {}, index: {}", params.get("sign"), params.get("trade_status"), params.toString());
 
         // MOST SIGNIFICANT, verify if the callback is from alipay and avoid repeated notification
         // two requirement: remove sign and sign_type(sign has been removed by alipay server)
@@ -123,7 +120,7 @@ public class OrderController {
                 return ServerResponse.createByErrorMessage("Illegal requirement!!!");
             }
         } catch (AlipayApiException e) {
-            logger.error("Alipay allback error",e);
+            log.error("Alipay allback error",e);
         }
         ServerResponse serverResponse = iOrderService.aliCallBack(params);
         if(serverResponse.isSuccess()) {

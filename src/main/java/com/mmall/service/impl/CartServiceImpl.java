@@ -33,7 +33,6 @@ public class CartServiceImpl implements ICartService {
 
     @Autowired
     private ProductMapper productMapper;
-
     @Override
     public ServerResponse<CartVo> add(Integer userId, Integer productId, Integer count) {
         if(productId == null || count == null) {

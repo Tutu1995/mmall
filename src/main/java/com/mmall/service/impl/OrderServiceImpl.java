@@ -27,6 +27,7 @@ import com.mmall.vo.OrderItemVo;
 import com.mmall.vo.OrderProductVo;
 import com.mmall.vo.OrderVo;
 import com.mmall.vo.ShippingVo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -43,6 +44,7 @@ import java.util.*;
  * Created by tino on 10/18/18.
  */
 @Service("iOrderService")
+@Slf4j
 public class OrderServiceImpl implements IOrderService {
     @Autowired
     private OrderMapper orderMapper;
@@ -70,8 +72,6 @@ public class OrderServiceImpl implements IOrderService {
 
         tradeService = new AlipayTradeServiceImpl.ClientBuilder().build();
     }
-
-    private static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     public ServerResponse createOrder(Integer userId, Integer shippingId) {
         // get cart data from cartMapper
@@ -348,7 +348,7 @@ public class OrderServiceImpl implements IOrderService {
         AlipayF2FPrecreateResult result = tradeService.tradePrecreate(builder);
         switch (result.getTradeStatus()) {
             case SUCCESS:
-                logger.info("Alipay prepay successfully");
+                log.info("Alipay prepay successfully");
 
                 AlipayTradePrecreateResponse response = result.getResponse();
                 dumpResponse(response);
@@ -367,36 +367,36 @@ public class OrderServiceImpl implements IOrderService {
                 try {
                     FTPUtil.upLoadFile(Lists.newArrayList(targetFile));
                 } catch (IOException e) {
-                    logger.error("Cannot upload QR code", e);
+                    log.error("Cannot upload QR code", e);
                 }
-                logger.info("qrPath: " + qrPath);
+                log.info("qrPath: " + qrPath);
 
                 String qrUrl = PropertiesUtil.getProperty("ftp.server.http.prefix") + targetFile.getName();
                 resultMap.put("qrUrl", qrUrl);
                 return ServerResponse.createBySuccess(resultMap);
 
             case FAILED:
-                logger.error("Cannot prepay Alipay");
+                log.error("Cannot prepay Alipay");
                 return ServerResponse.createByErrorMessage("Cannot prepay Alipay");
 
             case UNKNOWN:
-                logger.error("Error, prepay status unknown");
+                log.error("Error, prepay status unknown");
                 return ServerResponse.createByErrorMessage("Error, prepay status unknown");
 
             default:
-                logger.error("Error, cannot support trade status");
+                log.error("Error, cannot support trade status");
                 return ServerResponse.createByErrorMessage("Error, cannot support trade status");
         }
     }
 
     private void dumpResponse(AlipayResponse response) {
         if (response != null) {
-            logger.info(String.format("code:%s, msg:%s", response.getCode(), response.getMsg()));
+            log.info(String.format("code:%s, msg:%s", response.getCode(), response.getMsg()));
             if (StringUtils.isNotEmpty(response.getSubCode())) {
-                logger.info(String.format("subCode:%s, subMsg:%s", response.getSubCode(),
+                log.info(String.format("subCode:%s, subMsg:%s", response.getSubCode(),
                         response.getSubMsg()));
             }
-            logger.info("body:" + response.getBody());
+            log.info("body:" + response.getBody());
         }
     }
 

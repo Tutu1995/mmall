@@ -1,8 +1,7 @@
 package com.mmall.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,9 +10,8 @@ import java.util.Properties;
 /**
  * Created by geely
  */
+@Slf4j
 public class PropertiesUtil {
-
-    private static Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);
 
     private static Properties props;
 
@@ -29,7 +27,7 @@ public class PropertiesUtil {
         try {
             props.load(new InputStreamReader(PropertiesUtil.class.getClassLoader().getResourceAsStream(fileName),"UTF-8"));
         } catch (IOException e) {
-            logger.error("Could not load configuration file", e);
+            log.error("Could not load configuration file", e);
         }
     }
 

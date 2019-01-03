@@ -3,6 +3,7 @@ package com.mmall.service.impl;
 import com.google.common.collect.Lists;
 import com.mmall.service.IFileService;
 import com.mmall.util.FTPUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -17,9 +18,8 @@ import java.util.UUID;
  */
 
 @Service("iFileService")
+@Slf4j
 public class FileServiceImpl implements IFileService {
-
-    private Logger logger = LoggerFactory.getLogger(FileServiceImpl.class);
 
     public String upload(MultipartFile file, String path) {
         // extension
@@ -28,7 +28,7 @@ public class FileServiceImpl implements IFileService {
         String fileExtensionName = fileName.substring(fileName.lastIndexOf(".") + 1);
         // avoid uploading a file with same name
         String uploadFileName = UUID.randomUUID().toString() + "." + fileExtensionName;
-        logger.info("Begin to upload file, file name:{}, uploading path:{}, new file name:{}", fileName, path, uploadFileName);
+        log.info("Begin to upload file, file name:{}, uploading path:{}, new file name:{}", fileName, path, uploadFileName);
 
         // create directory under this path
         File fileDir = new File(path);
@@ -50,7 +50,7 @@ public class FileServiceImpl implements IFileService {
             // delete files in upload
             targetFile.delete();
         } catch (IOException e) {
-            logger.error("Cannot upload files", e);
+            log.error("Cannot upload files", e);
             return null;
         }
         return targetFile.getName();
