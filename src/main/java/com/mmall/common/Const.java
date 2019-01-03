@@ -13,9 +13,11 @@ public class Const {
 
     public static final String EMAIL = "email";
     public static final String USERNAME = "username";
+    public static final String TOKEN_PREFIX = "token_";
 
     public interface RedisCacheEx {
         int REDIS_SESSION_EXTIME = 60 * 30;
+        int REDIS_SESSION_EXTIME_TOKEN = 60 * 60 * 12;
     }
 
     public interface ProductListOrderBy{
