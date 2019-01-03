@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 public class CookieUtil {
-    private final static String COOKIE_DOMAIN = ".taozihao.xyz";
+    private final static String COOKIE_DOMAIN = ".taozihao.com";
     private final static String COOKIE_NAME = "mmall_login_token";
 
 
@@ -30,10 +30,11 @@ public class CookieUtil {
         return null;
     }
 
-    public static void wirteLoginToken(HttpServletResponse response, String token) {
+    public static void writeLoginToken(HttpServletResponse response, String token) {
         Cookie ck = new Cookie(COOKIE_NAME, token);
         ck.setDomain(COOKIE_DOMAIN);
         ck.setPath("/"); // root path
+        ck.setHttpOnly(true); // safe
         // unit second
         // if setMaxAge is not set, cookie will not be written into disk,
         // it is only valid under this page

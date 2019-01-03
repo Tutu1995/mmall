@@ -36,9 +36,8 @@ public class UserController {
     public ServerResponse<User> login(String username, String password, HttpSession session, HttpServletResponse httpServletResponse, HttpServletRequest httpServletRequest){
         ServerResponse<User> response = iUserService.login(username,password);
         if(response.isSuccess()) {
-            CookieUtil.wirteLoginToken(httpServletResponse, session.getId());
+            CookieUtil.writeLoginToken(httpServletResponse, session.getId());
             CookieUtil.readLoginToken(httpServletRequest);
-            CookieUtil.delLoginToken(httpServletRequest, httpServletResponse);
             RedisPoolUtil.setEx(session.getId(), JsonUtil.obj2String(response.getData()), Const.RedisCacheEx.REDIS_SESSION_EXTIME);
         }
         return response;
