@@ -5,7 +5,7 @@ import com.mmall.pojo.User;
 import com.mmall.service.IStatisticService;
 import com.mmall.util.CookieUtil;
 import com.mmall.util.JsonUtil;
-import com.mmall.util.RedisPoolUtil;
+import com.mmall.util.RedisShardedPoolUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,7 +33,7 @@ public class StatisticManageController {
         if(StringUtils.isEmpty(loginToken)) {
             return ServerResponse.createByErrorMessage("Need to login");
         }
-        String userJsonStr = RedisPoolUtil.get(loginToken);
+        String userJsonStr = RedisShardedPoolUtil.get(loginToken);
         User user = JsonUtil.String2Obj(userJsonStr, User.class);
         if(user != null){
             return iStatisticService.baseCount();
