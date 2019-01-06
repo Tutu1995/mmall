@@ -144,6 +144,9 @@ public class Const {
             }
             throw new RuntimeException("Cannot find enum object");
         }
+    }
 
+    public interface REDIS_LOCK {
+        String CLOSE_ORDER_TASK_LOCK = "CLOSE_ORDER_TASK_LOCK";
     }
 }
