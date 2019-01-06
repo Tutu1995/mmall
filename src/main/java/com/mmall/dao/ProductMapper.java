@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 
-public interface ProductMapper {
+public interface  ProductMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Product record);
@@ -26,4 +26,7 @@ public interface ProductMapper {
     List<Product> selectByNameAndCategoryIds(@Param(value = "productName") String productName, @Param("categoryIdList") List<Integer> categoryIdList);
 
     int checkProductNumber();
+
+    // must return integer because Integer can be null. Sometimes the item will be deleted, and return a null
+    Integer selectStockByProductId(Integer id);
 }
