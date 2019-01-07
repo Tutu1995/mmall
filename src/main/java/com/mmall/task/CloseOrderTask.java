@@ -55,7 +55,7 @@ public class CloseOrderTask {
         log.info("Close order task ends.");
     }
 
-    //@Scheduled(cron="0 */1 * * * ?")
+    @Scheduled(cron="0 */1 * * * ?")
     public void closeOrderTaskV3() {
         log.info("Close order task starts.");
         long lockTimeout = Long.parseLong(PropertiesUtil.getProperty("lock.timeout", "5000"));
@@ -79,12 +79,13 @@ public class CloseOrderTask {
         log.info("Close order task ends.");
     }
 
-    @Scheduled(cron="0 */1 * * * ?")
+    //@Scheduled(cron="0 */1 * * * ?")
     public void closeOrderTaskV4() {
         RLock lock = redissonManager.getRedisson().getLock(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
         boolean getLock = false;
         try {
-            if(getLock = lock.tryLock(2, 5, TimeUnit.SECONDS)) {
+            // wait time = 0, let tomcats to complete to the lock
+            if(getLock = lock.tryLock(0, 5, TimeUnit.SECONDS)) {
                 log.info("Redisson get distributed lock:{}, ThreadName:{}", Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK, Thread.currentThread().getName());
                 int hour = Integer.parseInt(PropertiesUtil.getProperty("close.order.task.time.hour", "2"));
                 //iOrderService.closeOrder(hour);
