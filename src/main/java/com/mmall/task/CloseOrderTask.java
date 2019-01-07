@@ -56,27 +56,26 @@ public class CloseOrderTask {
     }
 
     @Scheduled(cron="0 */1 * * * ?")
-    public void closeOrderTaskV3() {
-        log.info("Close order task starts.");
-        long lockTimeout = Long.parseLong(PropertiesUtil.getProperty("lock.timeout", "5000"));
-        Long setnxResult = RedisShardedPoolUtil.setnx(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK, String.valueOf(System.currentTimeMillis() + lockTimeout));
-        if(setnxResult != null && setnxResult == 1) {
-            // if setnxResult = 1, successfully set value, get lock
+    public void closeOrderTaskV3(){
+        log.info("Close order task starts");
+        long lockTimeout = Long.parseLong(PropertiesUtil.getProperty("lock.timeout","5000"));
+        Long setnxResult = RedisShardedPoolUtil.setnx(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK,String.valueOf(System.currentTimeMillis()+lockTimeout));
+        if(setnxResult != null && setnxResult.intValue() == 1){
             closeOrder(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
-        } else {
+        }else{
             String lockValueStr = RedisShardedPoolUtil.get(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
-            if(lockValueStr != null && System.currentTimeMillis() > Long.parseLong(lockValueStr)) {
-                String getSetResult = RedisShardedPoolUtil.getSet(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK, String.valueOf(System.currentTimeMillis() + lockTimeout));
-                if(getSetResult == null || (getSetResult != null && StringUtils.equals(getSetResult, lockValueStr))) {
+            if(lockValueStr != null && System.currentTimeMillis() > Long.parseLong(lockValueStr)){
+                String getSetResult = RedisShardedPoolUtil.getSet(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK,String.valueOf(System.currentTimeMillis()+lockTimeout));
+                if(getSetResult == null || (getSetResult != null && StringUtils.equals(lockValueStr,getSetResult))){
                     closeOrder(Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
-                } else {
-                    log.info("Do not get distributed lock:{}", Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+                }else{
+                    log.info("Do not get distributed lock:{}",Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
                 }
-            } else {
-                log.info("Do not get distributed lock:{}", Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
+            }else{
+                log.info("Do not get distributed lock:{}",Const.REDIS_LOCK.CLOSE_ORDER_TASK_LOCK);
             }
         }
-        log.info("Close order task ends.");
+        log.info("Close order task ends");
     }
 
     //@Scheduled(cron="0 */1 * * * ?")

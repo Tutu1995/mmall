@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a90cea43-dd8b-4901-bf83-dbc39fe7473e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources.prod/datasource.properties" afterPath="$PROJECT_DIR$/src/main/resources.prod/datasource.properties" />
     </list>
     <ignored path="mmall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,90 +39,110 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources.prod/datasource.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.16129032">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mmall.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources.prod/mmall.properties">
+      <file leaf-file-name="CloseOrderTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/task/CloseOrderTask.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.882353">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-51.875">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-215.625">
-              <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.7058825">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext-datasource.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-datasource.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.235294">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+              <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
               <folding>
-                <element signature="e#1468#1491#0" expanded="true" />
-                <element signature="e#1529#1540#0" expanded="true" />
-                <element signature="e#1583#1599#0" expanded="true" />
-                <element signature="e#1642#1658#0" expanded="true" />
-                <element signature="e#1732#1751#0" expanded="true" />
-                <element signature="e#1820#1837#0" expanded="true" />
-                <element signature="e#1952#1967#0" expanded="true" />
-                <element signature="e#2071#2086#0" expanded="true" />
-                <element signature="e#2179#2194#0" expanded="true" />
-                <element signature="e#2356#2381#0" expanded="true" />
-                <element signature="e#2698#2732#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext-spring-session.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml">
+      <file leaf-file-name="IOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/IOrderService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.529411">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/OrderServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="496" column="55" selection-start-line="496" selection-start-column="55" selection-end-line="496" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.75">
+              <caret line="252" column="11" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+              <folding>
+                <marker date="1546741408678" expanded="true" signature="1733:1840" placeholder="select from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="1927:1988" placeholder="delete from " />
+                <marker date="1546741408678" expanded="true" signature="2066:2683" placeholder="insert into mmall_order... " />
+                <marker date="1546741408678" expanded="true" signature="5122:6470" placeholder="update mmall... " />
+                <marker date="1546741408678" expanded="true" signature="6560:7232" placeholder="update mmall... " />
+                <marker date="1546741408678" expanded="true" signature="7338:7474" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="7572:7686" placeholder="SELECT FROM mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="7783:7912" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="7989:8087" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8156:8189" placeholder="select count... mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8299:8318" placeholder="SELECT inclu... " />
+                <marker date="1546741408678" expanded="true" signature="8299:8395" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8299:8440" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8299:8478" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8299:8483" placeholder="SELECT from mmall_order" />
+                <marker date="1546741408678" expanded="true" signature="8553:8571" placeholder="UPDATE mmall... " />
+                <marker date="1546741408678" expanded="true" signature="8553:8590" placeholder="UPDATE mmall... " />
+                <marker date="1546741408678" expanded="true" signature="8553:8600" placeholder="UPDATE mmall... " />
+                <marker date="1546741408678" expanded="true" signature="8553:8605" placeholder="UPDATE mmall... " />
+                <marker date="1546741408678" expanded="true" signature="8553:8611" placeholder="UPDATE mmall... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/ProductMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.125">
+              <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
+              <folding>
+                <marker date="1546749888914" expanded="true" signature="1528:1637" placeholder="select from mmall_product" />
+                <marker date="1546749888914" expanded="true" signature="1724:1787" placeholder="delete from " />
+                <marker date="1546749888914" expanded="true" signature="1867:2372" placeholder="insert into mmall_product... " />
+                <marker date="1546749888914" expanded="true" signature="4457:5568" placeholder="update mmall... " />
+                <marker date="1546749888914" expanded="true" signature="5660:6206" placeholder="update mmall... " />
+                <marker date="1546749888914" expanded="true" signature="6279:6368" placeholder="SELECT from mmall_product" />
+                <marker date="1546749888914" expanded="true" signature="7303:7338" placeholder="select count... mmall_product" />
+                <marker date="1546749888914" expanded="true" signature="7446:7521" placeholder="select stock... mmall_product" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,11 +205,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/dao/ProductMapper.java" />
         <option value="$USER_HOME$/Documents/tomcat1/webapps/ROOT/WEB-INF/classes/mappers/ProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/IOrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/common/Const.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/util/RedisShardedPoolUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mmall/task/CloseOrderTask.java" />
@@ -210,6 +226,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext-spring-session.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources.prod/datasource.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" />
       </list>
     </option>
   </component>
@@ -434,28 +453,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources.prod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mmall" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources.dev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1345,16 +1342,16 @@
       <workItem from="1546763922818" duration="73000" />
       <workItem from="1546764102257" duration="9781000" />
       <workItem from="1546833945072" duration="249000" />
-      <workItem from="1546835025390" duration="2047000" />
+      <workItem from="1546835025390" duration="2595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101684000" />
+    <option name="totallyTimeSpent" value="102232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1367,7 +1364,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33955225" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41791046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15547264" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15547264" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2732475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1432,13 +1429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5419162">
@@ -1462,30 +1452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7215569">
-          <caret line="222" column="14" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
-          <folding>
-            <marker date="1546749888914" expanded="true" signature="1528:1637" placeholder="select from mmall_product" />
-            <marker date="1546749888914" expanded="true" signature="1724:1787" placeholder="delete from " />
-            <marker date="1546749888914" expanded="true" signature="1867:2372" placeholder="insert into mmall_product... " />
-            <marker date="1546749888914" expanded="true" signature="4457:5568" placeholder="update mmall... " />
-            <marker date="1546749888914" expanded="true" signature="5660:6206" placeholder="update mmall... " />
-            <marker date="1546749888914" expanded="true" signature="6279:6368" placeholder="SELECT from mmall_product" />
-            <marker date="1546749888914" expanded="true" signature="7303:7338" placeholder="select count... mmall_product" />
-            <marker date="1546749888914" expanded="true" signature="7446:7521" placeholder="select stock... mmall_product" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31331593">
@@ -1497,50 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.740741">
           <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/IOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6490251">
-          <caret line="257" column="19" selection-start-line="257" selection-start-column="19" selection-end-line="257" selection-end-column="19" />
-          <folding>
-            <marker date="1546741408678" expanded="true" signature="1733:1840" placeholder="select from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="1927:1988" placeholder="delete from " />
-            <marker date="1546741408678" expanded="true" signature="2066:2683" placeholder="insert into mmall_order... " />
-            <marker date="1546741408678" expanded="true" signature="5122:6470" placeholder="update mmall... " />
-            <marker date="1546741408678" expanded="true" signature="6560:7232" placeholder="update mmall... " />
-            <marker date="1546741408678" expanded="true" signature="7338:7474" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="7572:7686" placeholder="SELECT FROM mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="7783:7912" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="7989:8087" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8156:8189" placeholder="select count... mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8299:8318" placeholder="SELECT inclu... " />
-            <marker date="1546741408678" expanded="true" signature="8299:8395" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8299:8440" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8299:8478" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8299:8483" placeholder="SELECT from mmall_order" />
-            <marker date="1546741408678" expanded="true" signature="8553:8571" placeholder="UPDATE mmall... " />
-            <marker date="1546741408678" expanded="true" signature="8553:8590" placeholder="UPDATE mmall... " />
-            <marker date="1546741408678" expanded="true" signature="8553:8600" placeholder="UPDATE mmall... " />
-            <marker date="1546741408678" expanded="true" signature="8553:8605" placeholder="UPDATE mmall... " />
-            <marker date="1546741408678" expanded="true" signature="8553:8611" placeholder="UPDATE mmall... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.2898173">
-          <caret line="495" column="0" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1762,14 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/task/CloseOrderTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/common/RedissonManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1865,6 +1779,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/task/CloseOrderTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/IOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.125">
+          <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
+          <folding>
+            <marker date="1546749888914" expanded="true" signature="1528:1637" placeholder="select from mmall_product" />
+            <marker date="1546749888914" expanded="true" signature="1724:1787" placeholder="delete from " />
+            <marker date="1546749888914" expanded="true" signature="1867:2372" placeholder="insert into mmall_product... " />
+            <marker date="1546749888914" expanded="true" signature="4457:5568" placeholder="update mmall... " />
+            <marker date="1546749888914" expanded="true" signature="5660:6206" placeholder="update mmall... " />
+            <marker date="1546749888914" expanded="true" signature="6279:6368" placeholder="SELECT from mmall_product" />
+            <marker date="1546749888914" expanded="true" signature="7303:7338" placeholder="select count... mmall_product" />
+            <marker date="1546749888914" expanded="true" signature="7446:7521" placeholder="select stock... mmall_product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="496" column="55" selection-start-line="496" selection-start-column="55" selection-end-line="496" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.75">
+          <caret line="252" column="11" selection-start-line="252" selection-start-column="11" selection-end-line="252" selection-end-column="11" />
+          <folding>
+            <marker date="1546741408678" expanded="true" signature="1733:1840" placeholder="select from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="1927:1988" placeholder="delete from " />
+            <marker date="1546741408678" expanded="true" signature="2066:2683" placeholder="insert into mmall_order... " />
+            <marker date="1546741408678" expanded="true" signature="5122:6470" placeholder="update mmall... " />
+            <marker date="1546741408678" expanded="true" signature="6560:7232" placeholder="update mmall... " />
+            <marker date="1546741408678" expanded="true" signature="7338:7474" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="7572:7686" placeholder="SELECT FROM mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="7783:7912" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="7989:8087" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8156:8189" placeholder="select count... mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8299:8318" placeholder="SELECT inclu... " />
+            <marker date="1546741408678" expanded="true" signature="8299:8395" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8299:8440" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8299:8478" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8299:8483" placeholder="SELECT from mmall_order" />
+            <marker date="1546741408678" expanded="true" signature="8553:8571" placeholder="UPDATE mmall... " />
+            <marker date="1546741408678" expanded="true" signature="8553:8590" placeholder="UPDATE mmall... " />
+            <marker date="1546741408678" expanded="true" signature="8553:8600" placeholder="UPDATE mmall... " />
+            <marker date="1546741408678" expanded="true" signature="8553:8605" placeholder="UPDATE mmall... " />
+            <marker date="1546741408678" expanded="true" signature="8553:8611" placeholder="UPDATE mmall... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources.dev/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1876,7 +1878,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources.prod/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16129032">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>
