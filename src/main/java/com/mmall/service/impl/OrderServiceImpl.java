@@ -511,7 +511,7 @@ public class OrderServiceImpl implements IOrderService {
                 productMapper.updateByPrimaryKeySelective(product);
             }
             orderMapper.closeOrderByOrderId(order.getId());
-            log.info("关闭订单OrderNo：{}",order.getOrderNo());
+            log.info("Close Order OrderNo：{}",order.getOrderNo());
         }
     }
 }
