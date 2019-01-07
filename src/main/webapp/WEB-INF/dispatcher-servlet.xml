@@ -8,14 +8,11 @@
 	http://www.springframework.org/schema/mvc
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!-- 二期温馨提示,springmvc扫描包指定到controller，防止重复扫描 -->
     <context:component-scan base-package="com.mmall.controller" annotation-config="true" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <!--HandlerMapping: default-->
-
-
-    <!--bind request params to controller params-->
     <mvc:annotation-driven>
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -36,28 +33,30 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
-    <!--static resources-->
-    <!--<mvc:resources mapping="/.../" location="/.../"/>-->
 
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceView">-->
-        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
-        <!--<property name="perfix" value="/WEB-INF/jsps/"/>-->
-        <!--<property name="suffix" value=".jsps"/>-->
-    <!--</bean>-->
 
     <!-- 文件上传 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="10485760" /> <!-- 10m -->
+        <property name="maxUploadSize" value="10485760"/> <!-- 10m -->
         <property name="maxInMemorySize" value="4096" />
-        <property name="defaultEncoding" value="UTF-8" />
+        <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
 
+
+
     <mvc:interceptors>
+        <!-- 定义在这里的，所有的都会拦截-->
         <mvc:interceptor>
-            <mvc:mapping path="/manage/**" />
-            <!--<mvc:exclude-mapping path="/manage/user/login.do" />-->
+            <!--manage/a.do  /manage/*-->
+            <!--manage/b.do  /manage/*-->
+            <!--manage/product/save.do /manage/**-->
+            <!--manage/order/detail.do /manage/**-->
+            <mvc:mapping path="/manage/**"/>
+            <!--<mvc:exclude-mapping path="/manage/user/login.do"/>-->
             <bean class="com.mmall.controller.common.interceptor.AuthorityInterceptor" />
         </mvc:interceptor>
+
     </mvc:interceptors>
+
 
 </beans>

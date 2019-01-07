@@ -24,6 +24,7 @@
     </filter-mapping>
 
 
+    <!-- 二期新增重置session时间的filter -->
     <filter>
         <filter-name>sessionExpireFilter</filter-name>
         <filter-class>com.mmall.controller.common.SessionExpireFilter</filter-class>
