@@ -16,13 +16,12 @@ import com.mmall.util.DateTimeUtil;
 import com.mmall.util.PropertiesUtil;
 import com.mmall.vo.ProductDetailVo;
 import com.mmall.vo.ProductListVo;
-
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tino on 10/13/18.
@@ -44,14 +43,14 @@ public class ProductServiceImpl implements IProductService{
         if (product != null) {
             if(StringUtils.isNotBlank(product.getSubImages())) {
                 String[] subImageArray = product.getSubImages().split(",");
-                if(subImageArray.length > 0) product.setMainImage(subImageArray[0]);
-                if(product.getId() != null) {
-                    int rowCount = productMapper.updateByPrimaryKey(product);
-                    if (rowCount > 0) {
-                        return ServerResponse.createBySuccess("Product updated successfully");
-                    } else {
-                        return ServerResponse.createByErrorMessage("Cannot updated product");
-                    }
+                if (subImageArray.length > 0) product.setMainImage(subImageArray[0]);
+            }
+            if(product.getId() != null) {
+                int rowCount = productMapper.updateByPrimaryKey(product);
+                if (rowCount > 0) {
+                    return ServerResponse.createBySuccess("Product updated successfully");
+                } else {
+                    return ServerResponse.createByErrorMessage("Cannot updated product");
                 }
             } else {
                 int rowCount = productMapper.insert(product);
